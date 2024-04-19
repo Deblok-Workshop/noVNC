@@ -1774,5 +1774,5 @@ const LINGUAS = ["cs", "de", "el", "es", "fr", "it", "ja", "ko", "nl", "pl", "pt
 l10n.setup(LINGUAS, "app/locale/")
     .catch(err => Log.Error("Failed to load translations: " + err))
     .then(UI.prime);
-
+window.novncui = UI;
 export default UI;
